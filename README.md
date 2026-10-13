@@ -2,14 +2,35 @@
 
 ## Lancer le projet
 
-Assurez-vous d'utiliser Node.js version 22.
+### Avec Docker (Node.js 22)
+
+Cette option utilise Node.js 22 dans un conteneur et ne change pas la version de Node.js installée sur votre machine. Docker Desktop ou Docker Engine avec Docker Compose est requis.
+
+Vérifiez la version Node.js configurée dans le conteneur :
 
 ```bash
+docker compose run --rm app node --version
+```
+
+Lancez ensuite le serveur de développement :
+
+```bash
+docker compose up --build
+```
+
+Accédez à `http://localhost:5173/screen/page-a` ou `http://localhost:5173/screen/page-b`. Arrêtez le serveur avec `Ctrl+C`.
+
+### Directement sur votre machine
+
+Cette option nécessite Node.js version 22 installé localement.
+
+```bash
+node --version
 yarn install
 yarn run dev
 ```
 
-Accédez ensuite à `http://localhost:5173/screen/page-a` ou `/screen/page-b` pour tester.
+Accédez ensuite à `http://localhost:5173/screen/page-a` ou `http://localhost:5173/screen/page-b`.
 
 ---
 
