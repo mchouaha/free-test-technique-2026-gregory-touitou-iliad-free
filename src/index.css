@@ -80,6 +80,7 @@ button, input { font: inherit; }
 .submit-button:hover { transform: translateY(-1px); background: #205b55; box-shadow: 0 7px 16px rgba(40, 106, 99, 0.22); }
 .submit-button:focus-visible { outline: 3px solid #9ac9c1; outline-offset: 3px; }
 .screen-loading { width: min(100% - 2rem, 760px); margin: 10vh auto; border: 1px solid #e3eaed; border-radius: 1rem; padding: 1.5rem; background: #fff; color: #536874; box-shadow: 0 12px 38px rgba(34, 55, 68, 0.07); }
+.screen-error { margin-top: 10vh; padding: clamp(1.5rem, 5vw, 2.75rem); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }

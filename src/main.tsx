@@ -17,6 +17,10 @@ const router = createBrowserRouter([
     Component: App,
   },
   {
+    path: "/screen",
+    Component: ScreenRenderer
+  },
+  {
     path: "/screen/:screenId",
     Component: ScreenRenderer
   },

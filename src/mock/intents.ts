@@ -25,6 +25,6 @@ export function fetchIntents(screenId: string): Promise<ScreenIntents | undefine
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(intents[screenId as ScreenId]);
-    }, 50 + Math.random() * 950);
+    }, 50 + Math.random() * 2950);
   });
 }
